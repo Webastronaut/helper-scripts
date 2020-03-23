@@ -14,7 +14,7 @@ A [Golog](https://www.sciencedirect.com/science/article/pii/S0743106696001215/pd
 python3 golog-to-asp.py "[move(X,D){robot(X), direction(D)}|wait(R){robot(R)}]*;#~battery_low(R){robot(R)} & [robot_on_target(R,T){robot(R), target(T)} + robot_loading(R){robot(R)}]#?"
 ```
 
-This creates files `gst.lp` and `gst.dot.png` that represent the entered Golog program.
+This creates files `gst.lp` and `gst.dot.png` that represent the entered Golog program. 
 
 ## pretty-print.py
 
