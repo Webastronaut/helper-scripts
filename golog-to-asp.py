@@ -82,7 +82,7 @@ class GOLOGToASP:
         "node double": "fst({}, {}, {}({},{})).\n"
     }
     dot_template = {
-        "start": "graph gst {\ngraph [fontname = \"helvetica\"];\nnode [fontname = \"helvetica\"];\nedge [fontname = \"helvetica\"];",
+        "start": "graph gst {\ngraph [fontname = \"arial\"];\nnode [fontname = \"arial\"];\nedge [fontname = \"arial\"];",
         "leaf": "{} [label=\"{} | {}\" shape=record style=rounded];\n{};\n",
         "node": "{} [label=\"{} | {}\" shape=record style=rounded penwidth=2];\n{} -- {};\n",
         "end": "}"
