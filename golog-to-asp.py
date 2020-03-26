@@ -67,7 +67,7 @@ class GOLOGToASP:
         "gst": ["or", "seq", "star", "plus", "test"],
         "fst": ["or", "and", "neg"]
     }
-    re = ""
+    prog = ""
     ast = []
     gst_template = {
         "atom variables": "gst({}, {}) :- {}.\n",
@@ -99,7 +99,7 @@ class GOLOGToASP:
             Golog program from command line
         """
 
-        self.re = prog
+        self.prog = prog
 
     def get_name(self, op, type="gst"):
         """
@@ -144,7 +144,7 @@ class GOLOGToASP:
         prog = ""
 
         if type == "gst":
-            prog = self.re
+            prog = self.prog
             prog = prog.replace(" ", "")
             # remove ASP style comments
             prog = sub(r'%[a-zA-Z0-9\-_:;\.,\s\{\}\(\)\*\+\-\&~]+\n', "", prog)
@@ -400,7 +400,7 @@ class GOLOGToASP:
         node = self.get_ast()[0]
         queue.append(node)
 
-        f.write("%*\n{}\n*%\n".format(self.re))
+        f.write("%*\n{}\n*%\n".format(self.prog))
 
         i = 0
         j = 0
