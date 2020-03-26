@@ -1,4 +1,4 @@
-#!/usr/local/bin/Python3
+#!/usr/local/bin/python3
 
 from sys import stdin, argv
 from re import findall
@@ -7,7 +7,7 @@ from time import time
 
 class PrettyPrintClingoOutput:
     """
-    Class containing methods to pretty print clingo output. Requires clingo output in JSON format and predicates occurs/2 and holds/2. Usage: clingo my_program.lp --outf=2 | Python3 pretty-print.py
+    Class containing methods to pretty print clingo output. Requires clingo output in JSON format and predicates occurs/2 and holds/2. Usage: clingo my_program.lp --outf=2 | python3 pretty-print.py
     
     Attributes
     ----------

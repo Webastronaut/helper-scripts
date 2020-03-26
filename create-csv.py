@@ -1,4 +1,4 @@
-#!/usr/local/bin/python3git 
+#!/usr/local/bin/python3 
 
 from sys import argv
 from os import listdir
@@ -7,7 +7,7 @@ from statistics import mean, stdev
 from json import loads
 
 # Usage:
-# python create-csv.py ./[RESULTS_FOLDER]/ [OUTPUT_FOLDER_NAME] [RUNS]
+# python3 create-csv.py ./[RESULTS_FOLDER]/ [OUTPUT_FOLDER_NAME] [RUNS]
 
 today = date.today()
 

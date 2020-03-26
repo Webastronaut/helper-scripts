@@ -1,4 +1,4 @@
-#!/usr/local/bin/Python3
+#!/usr/local/bin/python3
 
 from re import findall, finditer, sub
 from sys import argv
